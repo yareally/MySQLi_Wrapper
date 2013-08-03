@@ -81,6 +81,8 @@ class MySQL extends \mysqli
      * The singleton creator for the class.
      * Call to this method to create and initialize
      * the class instance. Number of args is inferred and passed to the proper private constructor
+     * 
+     * @see http://php.net/manual/en/function.func-get-args.php
      *
      * @param array args - contains all the arguments to initalize the object instance
      * @return object instance
