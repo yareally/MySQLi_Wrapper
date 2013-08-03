@@ -29,6 +29,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * Wrapper class for MySQLi. Requires PHP 5.3+ (unless you remove the namespace)
  *
  * @TODO : rewrite the example below to reflect making this a singleton.
+ * @TODO : decide to stay with the singleton or just use persistent connections
+ * @link : http://www.php.net/manual/en/mysqli.persistconns.php
  *
  * @example
  *
