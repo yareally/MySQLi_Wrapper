@@ -371,8 +371,8 @@ class MySQL extends \mysqli implements MySQL_Config
     public function useSSL($serverKey='/etc/apache2/ssl-keys/server.key', $domainkey='/etc/apache2/ssl-keys/domain.crt', $caCert='/etc/apache2/ssl-keys/cabundle.crt')
     {
         try{
-            if (strnatcmp(phpversion(), '5.3') >= 0){ // assuming you are using mysqlnd with php 5.3 or greater
-                throw new \Exception("SSL cannot be used with mysql native driver<br><br>");
+            if (strnatcmp(phpversion(), '5.3.3') >= 0){ // assuming you are using mysqlnd with php 5.3.3 or greater
+                throw new \Exception("SSL cannot be used with mysql native driver before PHP 5.3.3<br><br>");
             }
 
             if(!$result = parent::ssl_set($serverKey, $domainkey, $caCert, NULL, NULL)){
