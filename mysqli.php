@@ -66,7 +66,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  *
  */
 
-class MySQL extends \mysqli implements MySQL_Config
+class MySQL extends \mysqli
 {
     protected $dbInfo       = array(); // holds current db info
     public $rowsAffected;   // how many rows were affected by the db transaction
